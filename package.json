@@ -1,0 +1,43 @@
+{
+  "name": "nodebird",
+  "version": "0.0.1",
+  "main": "server.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production PORT=80 pm2 start server.js -i 0",
+    "dev": "nodemon server",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "MIT",
+  "description": "익스프레스로 만드는 SNS 서비스",
+  "dependencies": {
+    "artillery": "^2.0.13",
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "cross-env": "^10.1.0",
+    "csurf": "^1.11.0",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "express-session": "^1.18.2",
+    "helmet": "^8.1.0",
+    "hpp": "^0.2.3",
+    "morgan": "^1.10.1",
+    "multer": "^2.0.2",
+    "mysql2": "^3.15.1",
+    "nunjucks": "^3.2.4",
+    "passport": "^0.7.0",
+    "passport-kakao": "^1.0.1",
+    "passport-local": "^1.0.0",
+    "pm2": "^6.0.13",
+    "sanitize-html": "^2.17.0",
+    "sequelize": "^6.37.7",
+    "sequelize-cli": "^6.6.3",
+    "winston": "^3.18.3",
+    "winston-daily-rotate-file": "^5.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.10",
+    "supertest": "^6.3.3"
+  }
+}
