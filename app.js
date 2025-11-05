@@ -10,7 +10,8 @@ const morgan = require('morgan');
 const nunjucks = require('nunjucks');
 const redis = require('redis');
 // const RedisStore = require('connect-redis')(session);
-const RedisStore = require('connect-redis').default;
+// const RedisStore = require('connect-redis').default;
+const { RedisStore } = require('connect-redis');
 
 dotenv.config();
 const redisClient = redis.createClient({
